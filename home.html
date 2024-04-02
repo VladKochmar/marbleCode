@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Home"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="main-swiper-page">
+				<div class="main-swiper-page__slider swiper">
+					<div class="main-swiper-page__wrapper swiper-wrapper">
+						<div class="main-swiper-page__slide swiper-slide slide-swiper-page">
+							<div class="slide-swiper-page__container">
+								<div class="slide-swiper-page__content">
+									<h1 class="slide-swiper-page__title">The best products</h1>
+									<p class="slide-swiper-page__text">In stock</p>
+									<a href="catalog.html" class="slide-swiper-page__button button button_white button_arrow">Read More</a>
+									<button type="button" data-popup="#order" class="slide-swiper-page__button button">Book a free quote</button>
+								</div>
+								<form action="#" method="#" class="slide-swiper-page__form form-book">
+									<h3 class="form-book__title">Order a free measurement</h3>
+									<div class="form-book__body">
+										<div><input data-required autocomplete="off" type="text" name="username" data-error="Enter your name" placeholder="Your name" class="form-book__input input input_dark"></div>
+										<div><input data-required autocomplete="off" type="text" name="user_phone" data-error="Enter your phone number" placeholder="Your phone number" class="form-book__input input input_dark"></div>
+										<button type="submit" class="form-book__button button">Order</button>
+									</div>
+								</form>
+							</div>
+							<img data-src="@img/home/main-swiper-page/image1.jpg" alt="image" class="slide-swiper-page__bg-image swiper-lazy">
+						</div>
+						<div class="main-swiper-page__slide swiper-slide slide-swiper-page">
+							<div class="slide-swiper-page__container">
+								<div class="slide-swiper-page__content">
+									<h1 class="slide-swiper-page__title">The best wood products</h1>
+									<p class="slide-swiper-page__text">To order</p>
+									<a href="catalog.html" class="slide-swiper-page__button button button_white button_arrow">Read More</a>
+								</div>
+							</div>
+							<img data-src="@img/home/main-swiper-page/image2.jpg" alt="image" class="slide-swiper-page__bg-image swiper-lazy">
+						</div>
+						<div class="main-swiper-page__slide swiper-slide slide-swiper-page">
+							<div class="slide-swiper-page__container">
+								<div class="slide-swiper-page__content">
+									<h2 class="slide-swiper-page__title">New Collection 2023</h2>
+									<p class="slide-swiper-page__text">In stock</p>
+									<a href="catalog.html" class="slide-swiper-page__button button button_white button_arrow">Read More</a>
+									<button type="button" data-popup="#order" class="slide-swiper-page__button button">Закажите бесплатный замер</button>
+								</div>
+								<form action="#" method="#" class="slide-swiper-page__form form-book">
+									<h3 class="form-book__title">Order a free measurement</h3>
+									<div class="form-book__body">
+										<div><input data-required autocomplete="off" type="text" name="username" data-error="Enter your name" placeholder="Your name" class="form-book__input input input_dark"></div>
+										<div><input data-required autocomplete="off" type="text" name="user_phone" data-error="Enter your phone number" placeholder="Your phone number" class="form-book__input input input_dark"></div>
+										<button type="submit" class="form-book__button button">Order</button>
+									</div>
+								</form>
+							</div>
+							<img data-src="@img/home/main-swiper-page/image3.jpg" alt="image" class="slide-swiper-page__bg-image swiper-lazy">
+						</div>
+						<div class="main-swiper-page__slide swiper-slide slide-swiper-page">
+							<div class="slide-swiper-page__container">
+								<div class="slide-swiper-page__content">
+									<h2 class="slide-swiper-page__title">Lorem ipsum dolor sit amet</h2>
+									<p class="slide-swiper-page__text">Lorem, ipsum</p>
+									<a href="catalog.html" class="slide-swiper-page__button button button_white button_arrow">Read More</a>
+								</div>
+							</div>
+							<img data-src="@img/home/main-swiper-page/image4.png" alt="image" class="slide-swiper-page__bg-image swiper-lazy">
+						</div>
+						<div class="main-swiper-page__slide swiper-slide slide-swiper-page">
+							<div class="slide-swiper-page__container">
+								<div class="slide-swiper-page__content">
+									<h2 class="slide-swiper-page__title">Sit amet consectetur adipisicing</h2>
+									<p class="slide-swiper-page__text">Adipisicing elit</p>
+									<a href="catalog.html" class="slide-swiper-page__button button button_white button_arrow">Read More</a>
+									<button type="button" data-popup="#order" class="slide-swiper-page__button button">Закажите бесплатный замер</button>
+								</div>
+								<form action="#" method="#" class="slide-swiper-page__form form-book">
+									<h3 class="form-book__title">Order a free measurement</h3>
+									<div class="form-book__body">
+										<div><input data-required autocomplete="off" type="text" name="username" data-error="Enter your name" placeholder="Your name" class="form-book__input input input_dark"></div>
+										<div><input data-required autocomplete="off" type="text" name="user_phone" data-error="Enter your phone number" placeholder="Your phone number" class="form-book__input input input_dark"></div>
+										<button type="submit" class="form-book__button button">Order</button>
+									</div>
+								</form>
+							</div>
+							<img data-src="@img/home/main-swiper-page/image5.jpg" alt="image" class="slide-swiper-page__bg-image swiper-lazy">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<button type="button" class="swiper-button-prev"><span class="swiper-button-prev__arrow"></span></button>
+					<button type="button" class="swiper-button-next"><span class="swiper-button-next__arrow"></span></button>
+				</div>
+				<div class="main-swiper-page__info-items">
+					<div class="main-swiper-page__item">
+						<div class="main-swiper-page__box">
+							<p class="main-swiper-page__text">Lorem, ipsum</p>
+							<img data-src="@img/caesarstone-logo.png" alt="caesarstone logo" class="main-swiper-page__logo">
+						</div>
+					</div>
+					<div class="main-swiper-page__item">
+						<p class="main-swiper-page__text"><span>15 sit</span> tempora obcaecati molestias</p>
+					</div>
+					<div class="main-swiper-page__item">
+						<p class="main-swiper-page__text"><span>34 aperiam</span> ducimus quod molestias iusto</p>
+					</div>
+					<img src="@img/bg-white.jpg" alt="background" class="main-swiper-page__background-image">
+				</div>
+			</section>
+			<section class="products">
+				<div class="products__top top-products">
+					<div class="top-products__container">
+						<h2 class="top-products__title title-main">Products</h2>
+						<div class="top-products__content">
+							<div class="top-products__info">Ducimus, odit dignissimos <span>2000</span> tempora officiis dignissimos</div>
+							<p class="top-products__text">Exercitationem, repudiandae nisi beatae impedit soluta maiores laborum ipsum ipsam dignissimos sint voluptas eius velit. Ducimus, odit dignissimos tempora officiis magni aperiam.</p>
+						</div>
+					</div>
+				</div>
+				<div class="products__bottom bottom-products">
+					<div class="bottom-products__container">
+						<div class="bottom-products__slider swiper">
+							<div class="bottom-products__wrapper swiper-wrapper">
+								<div class="bottom-products__slide swiper-slide swiper-products-slide">
+									<a href="catalog.html" class="swiper-products-slide__image-ibg">
+										<img data-src="@img/home/products/image1.jpg" alt="Kitchen worktops" class="swiper-lazy">
+										<div class="swiper-products-slide__box">
+											<div class="swiper-products-slide__lable">Kitchen worktops</div>
+											<div class="swiper-products-slide__arrow _icon-arrow-right"></div>
+										</div>
+									</a>
+									<div class="swiper-products-slide__body">
+										<a href="catalog.html" class="swiper-products-slide__title">Kitchen worktops</a>
+										<ul class="swiper-products-slide__list">
+											<li class="swiper-products-slide__item"><a href="catalog.html">Ceaserstone</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Supremo</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Concetto</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Quarello</a></li>
+										</ul>
+										<a href="catalog.html" class="swiper-products-slide__link">View catalog</a>
+										<img src="@img/home/bg-black.jpg" alt="image" class="swiper-products-slide__bg-image">
+									</div>
+								</div>
+								<div class="bottom-products__slide swiper-slide swiper-products-slide">
+									<a href="catalog.html" class="swiper-products-slide__image-ibg">
+										<img data-src="@img/home/products/image2.jpg" alt="Kitchen sinks" class="swiper-lazy">
+										<div class="swiper-products-slide__box">
+											<div class="swiper-products-slide__lable">Kitchen sinks</div>
+											<div class="swiper-products-slide__arrow _icon-arrow-right"></div>
+										</div>
+									</a>
+									<div class="swiper-products-slide__body">
+										<a href="catalog.html" class="swiper-products-slide__title">Kitchen sinks</a>
+										<ul class="swiper-products-slide__list">
+											<li class="swiper-products-slide__item"><a href="catalog.html">Ceaserstone</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Supremo</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Concetto</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Quarello</a></li>
+										</ul>
+										<a href="catalog.html" class="swiper-products-slide__link">View catalog</a>
+										<img src="@img/home/bg-black.jpg" alt="image" class="swiper-products-slide__bg-image">
+									</div>
+								</div>
+								<div class="bottom-products__slide swiper-slide swiper-products-slide">
+									<a href="catalog.html" class="swiper-products-slide__image-ibg">
+										<img data-src="@img/home/products/image3.jpg" alt="Window sills" class="swiper-lazy">
+										<div class="swiper-products-slide__box">
+											<div class="swiper-products-slide__lable">Window sills</div>
+											<div class="swiper-products-slide__arrow _icon-arrow-right"></div>
+										</div>
+									</a>
+									<div class="swiper-products-slide__body">
+										<a href="catalog.html" class="swiper-products-slide__title">Window sills</a>
+										<ul class="swiper-products-slide__list">
+											<li class="swiper-products-slide__item"><a href="catalog.html">Ceaserstone</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Supremo</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Concetto</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Quarello</a></li>
+										</ul>
+										<a href="catalog.html" class="swiper-products-slide__link">View catalog</a>
+										<img src="@img/home/bg-black.jpg" alt="image" class="swiper-products-slide__bg-image">
+									</div>
+								</div>
+								<div class="bottom-products__slide swiper-slide swiper-products-slide">
+									<a href="catalog.html" class="swiper-products-slide__image-ibg">
+										<img data-src="@img/home/products/image4.jpg" alt="Countertops S/S" class="swiper-lazy">
+										<div class="swiper-products-slide__box">
+											<div class="swiper-products-slide__lable">Countertops S/S</div>
+											<div class="swiper-products-slide__arrow _icon-arrow-right"></div>
+										</div>
+									</a>
+									<div class="swiper-products-slide__body">
+										<a href="catalog.html" class="swiper-products-slide__title">Countertops S/S</a>
+										<ul class="swiper-products-slide__list">
+											<li class="swiper-products-slide__item"><a href="catalog.html">Ceaserstone</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Supremo</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Concetto</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Quarello</a></li>
+										</ul>
+										<a href="catalog.html" class="swiper-products-slide__link">View catalog</a>
+										<img src="@img/home/bg-black.jpg" alt="image" class="swiper-products-slide__bg-image">
+									</div>
+								</div>
+								<div class="bottom-products__slide swiper-slide swiper-products-slide">
+									<a href="catalog.html" class="swiper-products-slide__image-ibg">
+										<img data-src="@img/home/products/image5.jpg" alt="Island parts" class="swiper-lazy">
+										<div class="swiper-products-slide__box">
+											<div class="swiper-products-slide__lable">Island parts</div>
+											<div class="swiper-products-slide__arrow _icon-arrow-right"></div>
+										</div>
+									</a>
+									<div class="swiper-products-slide__body">
+										<a href="catalog.html" class="swiper-products-slide__title">Island parts</a>
+										<ul class="swiper-products-slide__list">
+											<li class="swiper-products-slide__item"><a href="catalog.html">Ceaserstone</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Supremo</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Concetto</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Quarello</a></li>
+										</ul>
+										<a href="catalog.html" class="swiper-products-slide__link">View catalog</a>
+										<img src="@img/home/bg-black.jpg" alt="image" class="swiper-products-slide__bg-image">
+									</div>
+								</div>
+								<div class="bottom-products__slide swiper-slide swiper-products-slide">
+									<a href="catalog.html" class="swiper-products-slide__image-ibg">
+										<img data-src="@img/home/products/image6.jpg" alt="Bar counters" class="swiper-lazy">
+										<div class="swiper-products-slide__box">
+											<div class="swiper-products-slide__lable">Bar counters</div>
+											<div class="swiper-products-slide__arrow _icon-arrow-right"></div>
+										</div>
+									</a>
+									<div class="swiper-products-slide__body">
+										<a href="catalog.html" class="swiper-products-slide__title">Bar counters</a>
+										<ul class="swiper-products-slide__list">
+											<li class="swiper-products-slide__item"><a href="catalog.html">Ceaserstone</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Supremo</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Concetto</a></li>
+											<li class="swiper-products-slide__item"><a href="catalog.html">Quarello</a></li>
+										</ul>
+										<a href="catalog.html" class="swiper-products-slide__link">View catalog</a>
+										<img src="@img/home/bg-black.jpg" alt="image" class="swiper-products-slide__bg-image">
+									</div>
+								</div>
+							</div>
+							<button type="button" class="bottom-products__swiper-button swiper-button-prev"><span class="swiper-button-prev__arrow swiper-button-prev__arrow_black"></span></button>
+							<button type="button" class="bottom-products__swiper-button swiper-button-next"><span class="swiper-button-next__arrow swiper-button-next__arrow_black"></span></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-prlx-parent class="advantage">
+				<div class="advantage__container">
+					<h2 class="advantage__title title-main">Culpa inventore magni sed</h2>
+					<div class="advantage__content">
+						<div class="advantage__column">
+							<ul class="advantage__list">
+								<li class="advantage__item">Lorem, ipsum dolor</li>
+								<li class="advantage__item">Lorem ipsum dolor sit amet</li>
+								<li class="advantage__item">Lorem ipsum dolor sit</li>
+							</ul>
+						</div>
+						<div class="advantage__column">
+							<ul class="advantage__list">
+								<li class="advantage__item">Lorem ipsum dolor sit amet consectetur</li>
+								<li class="advantage__item">Lorem ipsum dolor sit</li>
+								<li class="advantage__item">Lorem, ipsum dolor</li>
+								<li class="advantage__item">Lorem, ipsum</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<img src="@img/bg-white.jpg" alt="bg" data-prlx>
+			</section>
+			<div class="discount">
+				<div class="discount__container discount__container_big">
+					<div class="discount__column">
+						<div class="discount__content">
+							<div class="discount__text">Lorem ipsum dolor sit amet, consectetur <span>adipisicing elit</span> Excepturi iste optio.</div>
+							<button type="button" data-popup="#discount" class="discount__button button button_arrow">Get a discount</button>
+							<img src="@img/home/bg-black.jpg" alt="bg" class="discount__bg-image">
+						</div>
+					</div>
+					<div class="discount__image-ibg"><img src="@img/home/discount/image.jpg" alt="image"></div>
+				</div>
+			</div>
+			<section data-prlx-parent class="new-countertop">
+				<div class="new-countertop__container">
+					<h2 class="new-countertop__title">Lorem ipsum dolor sit amet adipisicing!</h2>
+					<div class="new-countertop__items">
+						<div class="new-countertop__item">
+							<div class="new-countertop__icon"><img src="@img/home/new-countertop/icon-1.svg" alt="Расчёт стоимости изделия"></div>
+							<p class="new-countertop__text">Lorem ipsum dolor sit amet</p>
+						</div>
+						<div class="new-countertop__item">
+							<div class="new-countertop__icon"><img src="@img/home/new-countertop/icon-2.svg" alt="Снятие размеров"></div>
+							<p class="new-countertop__text">Lorem ipsum dolor sit</p>
+						</div>
+						<div class="new-countertop__item">
+							<div class="new-countertop__icon"><img src="@img/home/new-countertop/icon-3.svg" alt="Разработка чертежей и конструктива"></div>
+							<p class="new-countertop__text">Lorem ipsum dolor sit amet consectetur</p>
+						</div>
+						<div class="new-countertop__item">
+							<div class="new-countertop__icon"><img src="@img/home/new-countertop/icon-4.svg" alt="Изготовление изделия"></div>
+							<p class="new-countertop__text">Lorem ipsum dolor sit</p>
+						</div>
+						<div class="new-countertop__item">
+							<div class="new-countertop__icon"><img src="@img/home/new-countertop/icon-5.svg" alt="Доставка и монтаж"></div>
+							<p class="new-countertop__text">Lorem, ipsum dolor</p>
+						</div>
+					</div>
+				</div>
+				<img src="@img/bg-white.jpg" alt="bg" data-prlx>
+			</section>
+			<section class="why-us">
+				<div class="why-us__container why-us__container_big">
+					<h2 class="why-us__title">Why us?</h2>
+					<ul class="why-us__list">
+						<li class="why-us__item">Lorem ipsum dolor sit amet</li>
+						<li class="why-us__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolores corporis necessitatibus autem.</li>
+						<li class="why-us__item">Lorem ipsum dolor, sit amet consectetur adipisicing</li>
+						<li class="why-us__item">Lorem ipsum dolor sit amet consectetur</li>
+						<li class="why-us__item">Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+					</ul>
+					<img src="@img/home/why-us/bg-image.jpg" alt="image" class="why-us__bg-image">
+				</div>
+			</section>
+			<section class="manufacturers">
+				<div class="manufacturers__container">
+					<h2 class="manufacturers__title title-main">Manufacturers</h2>
+					<ul class="manufacturers__list">
+						<li class="manufacturers__item"><img src="@img/home/manufacturers/caesarstone.png" alt="caesarstone logo"></li>
+						<li class="manufacturers__item"><img src="@img/home/manufacturers/avant.png" alt="avant logo"></li>
+						<li class="manufacturers__item"><img src="@img/home/manufacturers/technistone.png" alt="technistone logo"></li>
+						<li class="manufacturers__item"><img src="@img/home/manufacturers/laminam.png" alt="laminam logo"></li>
+						<li class="manufacturers__item"><img src="@img/home/manufacturers/quarella.png" alt="quarella logo"></li>
+						<li class="manufacturers__item"><img src="@img/home/manufacturers/silestone.png" alt="silestone logo"></li>
+						<li class="manufacturers__item"><img src="@img/home/manufacturers/santamargherita.png" alt="santamargherita logo"></li>
+						<li class="manufacturers__item"><img src="@img/home/manufacturers/vicostone.png" alt="vicostone logo"></li>
+						<li class="manufacturers__item"><img src="@img/home/manufacturers/belenco.png" alt="belenco logo"></li>
+						<li class="manufacturers__item"><img src="@img/home/manufacturers/laminam.png" alt="laminam logo"></li>
+						<li class="manufacturers__item"><img src="@img/home/manufacturers/atem.png" alt="atem logo"></li>
+						<li class="manufacturers__item"><img src="@img/home/manufacturers/neolith.png" alt="neolith logo"></li>
+					</ul>
+				</div>
+			</section>
+			<div class="discount discount_mobile-none">
+				<div class="discount__container discount__container_big">
+					<div class="discount__image-ibg"><img src="@img/home/discount/image2.jpg" alt="image"></div>
+					<div class="discount__column">
+						<div class="discount__content">
+							<div class="discount__text discount__text_black">Lorem ipsum dolor <span>sit 60%</span> consectetur ipsum dolor sit consectetur</div>
+							<form action="#" method="#" class="discount__form">
+								<div style="max-width: 22.5rem; width: 100%;"><input data-required autocomplete="off" type="text" name="user_phone" data-error="Enter your phone number" placeholder="Phone number" class="discount__input input"></div>
+								<button type="submit" class="discount__button button button_arrow">Order</button>
+							</form>
+							<img src="@img/bg-white.jpg" alt="bg" class="discount__bg-image">
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="about-us">
+				<div class="about-us__container">
+					<div class="about-us__column">
+						<h2 class="about-us__title title-main">About us</h2>
+						<p class="about-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos autem alias similique ab reprehenderit? Dicta dolor amet suscipit in. Vel vero sequi placeat.</p>
+						<div data-tabs class="about-us__tabs tabs-about-us">
+							<nav data-tabs-titles class="tabs-about-us__navigation">
+								<button type="button" class="tabs-about-us__title _tab-active">History</button>
+								<button type="button" class="tabs-about-us__title">Production</button>
+								<button type="button" class="tabs-about-us__title">Investors</button>
+							</nav>
+							<div data-tabs-body class="tabs-about-us__content">
+								<div class="tabs-about-us__body">
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non laborum reprehenderit deserunt debitis, vitae illum provident odit?</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, enim, qui expedita veritatis itaque vitae voluptatem, tempora doloribus vel debitis veniam ea cum fuga nesciunt saepe nihil aliquid ducimus eveniet?</p>
+								</div>
+								<div class="tabs-about-us__body">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor rerum corporis suscipit enim eos eligendi! Debitis explicabo, sequi soluta porro, quidem cum, distinctio ratione atque voluptatum ducimus iure modi tempore.</p>
+								</div>
+								<div class="tabs-about-us__body">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deserunt minima, rerum veritatis accusantium quia porro. Suscipit debitis harum vel eum neque et officiis voluptas accusamus quod, aperiam optio dolorum.</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolore dicta recusandae omnis commodi, rem facere itaque ad beatae? Maiores repellat sit provident necessitatibus quaerat, vel doloremque incidunt possimus porro!</p>
+								</div>
+							</div>
+						</div>
+						<a href="about.html" class="about-us__link">Read More</a>
+					</div>
+					<div data-da=".about-us__column,767.98,2" class="about-us__image-ibg"><img data-src="@img/home/about-us/image.jpg" alt="image"></div>
+				</div>
+			</section>
+			<div class="guarantee">
+				<div class="guarantee__container guarantee__container_big">
+					<div class="guarantee__text">Lorem ipsum dolor, sit amet consectetur dis <span>15 years guarantee</span></div>
+					<form action="#" method="#" class="guarantee__form">
+						<div><input data-required autocomplete="off" type="text" name="user_phone" data-error="Enter your phone number" placeholder="Your phone number" class="guarantee__input input"></div>
+						<button type="submit" class="guarantee__button button button_arrow">Order</button>
+					</form>
+					<img data-src="@img/home/guarantee/image.jpg" alt="image" class="guarantee__bg-image">
+				</div>
+			</div>
+			<section class="contacts">
+				<div class="contacts__container">
+					<h2 class="contacts__title title-main">Contacts</h2>
+					<div class="contacts__body">
+						<div class="contacts__left-column">
+							<div class="contacts__item item-contacts">
+								<div class="item-contacts__city">Kyiv</div>
+								<address class="item-contacts__address">Central office: St. Tarasa Shevchenko, 18/7</address>
+								<div class="item-contacts__info">
+									<a href="tel:+380674444444" class="item-contacts__number">+38 (067) 444-44-44</a>
+									<a href="tel:+380675555555" class="item-contacts__number">+38 (067) 555-55-55</a>
+									<div class="item-contacts__block">E-mail: <a href="mailto:office@company.ua" class="item-contacts__number">office@company.ua</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__right-column">
+							<div class="contacts__items">
+								<div class="contacts__item item-contacts">
+									<div class="item-contacts__city">Odesa</div>
+									<div class="item-contacts__info">
+										<a href="tel:+380939999999" class="item-contacts__number">+38 (093) 999-99-99</a>
+										<a href="tel:+380676666666" class="item-contacts__number">+38 (067) 666-66-66</a>
+									</div>
+								</div>
+								<div class="contacts__item item-contacts">
+									<div class="item-contacts__city">Dnipro</div>
+									<div class="item-contacts__info">
+										<a href="tel:+380932222222" class="item-contacts__number">+38 (093) 222-22-22</a>
+									</div>
+								</div>
+								<div class="contacts__item item-contacts">
+									<div class="item-contacts__city">Lviv</div>
+									<div class="item-contacts__info">
+										<a href="tel:+380938888888" class="item-contacts__number">+38 (093) 888-88-88</a>
+									</div>
+								</div>
+								<div class="contacts__item item-contacts">
+									<div class="item-contacts__city">Kharkiv</div>
+									<div class="item-contacts__info">
+										<a href="tel:+380677777777" class="item-contacts__number">+38 (067) 777-77-77</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+
+	<style>
+		.header {
+			background: none;
+		}
+	</style>
+
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

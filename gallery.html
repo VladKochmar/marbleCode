@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Gallery"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="picture-pages">
+            <div class="picture-pages__container">
+               <div class="picture-pages__header page-top">
+                  <nav class="page-top__pages pages-navigation">
+                     <ul class="pages-navigation__list">
+                        <li class="pages-navigation__item"><a href="index.html" class="pages-navigation__link">Home</a></li>
+                        <li class="pages-navigation__item"><a href="#" class="pages-navigation__link pages-navigation__link_active">Gallery</a></li>
+                     </ul>
+                  </nav>
+                  <div class="page-top__body">
+                     <h1 class="page-top__title">Gallery</h1>
+                     <div class="page-top__content">
+                        <p class="page-top__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus ipsam ab mollitia maiores, recusandae ad.</p>
+                        <button type="button" class="page-top__button button button_arrow">Download the catalog</button>
+                     </div>
+                  </div>
+               </div>
+               <div data-tabs class="tabs-picture-pages">
+                  <nav data-tabs-titles class="tabs-picture-pages__navigation">
+                     <button type="button" class="tabs-picture-pages__title _tab-active">Photo</button>
+                     <button type="button" class="tabs-picture-pages__title">Video</button>
+                  </nav>
+                  <div data-tabs-body class="tabs-picture-pages__content">
+                     <div class="tabs-picture-pages__body">
+                        <div class="tabs-picture-pages__items">
+                           <a href="kitchens.html" class="tabs-picture-pages__image-ibg">
+                              <img data-src="@img/gallery/image1.jpg" alt="Kitchens">
+                              <div class="tabs-picture-pages__info">Kitchens</div>
+                           </a>
+                           <a href="kitchens.html" class="tabs-picture-pages__image-ibg">
+                              <img data-src="@img/gallery/image2.jpg" alt="Bathrooms">
+                              <div class="tabs-picture-pages__info">Bathrooms</div>
+                           </a>
+                           <a href="kitchens.html" class="tabs-picture-pages__image-ibg">
+                              <img data-src="@img/gallery/image3.jpg" alt="Window sills">
+                              <div class="tabs-picture-pages__info">Window sills</div>
+                           </a>
+                           <a href="kitchens.html" class="tabs-picture-pages__image-ibg">
+                              <img data-src="@img/gallery/image4.jpg" alt="Bar counters">
+                              <div class="tabs-picture-pages__info">Bar counters</div>
+                           </a>
+                           <a href="kitchens.html" class="tabs-picture-pages__image-ibg">
+                              <img data-src="@img/gallery/image5.jpg" alt="Commercial objects">
+                              <div class="tabs-picture-pages__info">Commercial objects</div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="tabs-picture-pages__body">
+                        <div class="tabs-picture-pages__items">
+                           <a href="kitchens.html" class="tabs-picture-pages__image-ibg">
+                              <img data-src="@img/gallery/image6.jpg" alt="Kitchens">
+                              <div class="tabs-picture-pages__info">Kitchens</div>
+                           </a>
+                           <a href="kitchens.html" class="tabs-picture-pages__image-ibg">
+                              <img data-src="@img/gallery/image7.jpg" alt="Bathrooms">
+                              <div class="tabs-picture-pages__info">Bathrooms</div>
+                           </a>
+                           <a href="kitchens.html" class="tabs-picture-pages__image-ibg">
+                              <img data-src="@img/gallery/image8.jpg" alt="Window sills">
+                              <div class="tabs-picture-pages__info">Window sills</div>
+                           </a>
+                           <a href="kitchens.html" class="tabs-picture-pages__image-ibg">
+                              <img data-src="@img/gallery/image9.jpg" alt="Bar counters">
+                              <div class="tabs-picture-pages__info">Bar counters</div>
+                           </a>
+                           <a href="kitchens.html" class="tabs-picture-pages__image-ibg">
+                              <img data-src="@img/gallery/image10.jpg" alt="Commercial objects">
+                              <div class="tabs-picture-pages__info">Commercial objects</div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

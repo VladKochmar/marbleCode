@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Catalog"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="catalog">
+            <div class="catalog__container">
+               <div class="catalog__header page-top">
+                  <nav class="page-top__pages pages-navigation">
+                     <ul class="pages-navigation__list ">
+                        <li class="pages-navigation__item"><a href="index.html" class="pages-navigation__link">Home</a></li>
+                        <li class="pages-navigation__item"><a href="#" class="pages-navigation__link pages-navigation__link_active">Catalog</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="catalog__content">
+                  <aside class="catalog__sidebar sidebar-catalog">
+                     <form action="#" class="sidebar-catalog__form">
+                        <button type="button" class="sidebar-catalog__cross"><span class="sidebar-catalog__lines"></span></button>
+                        <div class="sidebar-catalog__body">
+                           <div class="sidebar-catalog__item">
+                              <h4 class="sidebar-catalog__title sidebar-catalog__title_no-arrow">Search</h4>
+                              <label class="sidebar-catalog__search"><input id="search" autocomplete="off" type="text" name="search" placeholder="Search" class="sidebar-catalog__input-search"><label for="search" class="sidebar-catalog__lable _icon-search"></label></label>
+                           </div>
+                           <div data-spollers class="sidebar-catalog__item">
+                              <button type="button" data-spoller class="sidebar-catalog__title">Colors</button>
+                              <div class="sidebar-catalog__box">
+                                 <div class="color-options">
+                                    <div class="color-options__all-colors">
+                                       <input id="all-colors" class="color-options__input" checked type="radio" value="All colors" name="colors">
+                                       <label for="all-colors" class="color-options__all-colors-lable">All colors</label>
+                                    </div>
+                                    <div class="color-options__body">
+                                       <div class="color-options__item">
+                                          <input id="white" class="color-options__input" type="radio" value="white" name="colors">
+                                          <label for="white" class="color-options__label color-options__label_white"></label>
+                                       </div>
+                                       <div class="color-options__item">
+                                          <input id="blanc" class="color-options__input" type="radio" value="blanc" name="colors">
+                                          <label for="blanc" class="color-options__label color-options__label_blanc"></label>
+                                       </div>
+                                       <div class="color-options__item">
+                                          <input id="cloud" class="color-options__input" type="radio" value="cloud" name="colors">
+                                          <label for="cloud" class="color-options__label color-options__label_cloud"></label>
+                                       </div>
+                                       <div class="color-options__item">
+                                          <input id="cigar" class="color-options__input" type="radio" value="cigar" name="colors">
+                                          <label for="cigar" class="color-options__label color-options__label_cigar"></label>
+                                       </div>
+                                       <div class="color-options__item">
+                                          <input id="brown" class="color-options__input" type="radio" value="brown" name="colors">
+                                          <label for="brown" class="color-options__label color-options__label_brown"></label>
+                                       </div>
+                                       <div class="color-options__item">
+                                          <input id="silver" class="color-options__input" type="radio" value="silver" name="colors">
+                                          <label for="silver" class="color-options__label color-options__label_silver"></label>
+                                       </div>
+                                       <div class="color-options__item">
+                                          <input id="grey" class="color-options__input" type="radio" value="grey" name="colors">
+                                          <label for="grey" class="color-options__label color-options__label_grey"></label>
+                                       </div>
+                                       <div class="color-options__item">
+                                          <input id="orange" class="color-options__input" type="radio" value="orange" name="colors">
+                                          <label for="orange" class="color-options__label color-options__label_orange"></label>
+                                       </div>
+                                       <div class="color-options__item">
+                                          <input id="green" class="color-options__input" type="radio" value="green" name="colors">
+                                          <label for="green" class="color-options__label color-options__label_green"></label>
+                                       </div>
+                                       <div class="color-options__item">
+                                          <input id="black" class="color-options__input" type="radio" value="black" name="colors">
+                                          <label for="black" class="color-options__label color-options__label_black"></label>
+                                       </div>
+                                       <div class="color-options__item">
+                                          <input id="pink" class="color-options__input" type="radio" value="pink" name="colors">
+                                          <label for="pink" class="color-options__label color-options__label_pink"></label>
+                                       </div>
+                                       <div class="color-options__item">
+                                          <input id="blue" class="color-options__input" type="radio" value="blue" name="colors">
+                                          <label for="blue" class="color-options__label color-options__label_blue"></label>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div data-spollers class="sidebar-catalog__item">
+                              <button type="button" data-spoller class="sidebar-catalog__title">Manufacturers</button>
+                              <div class="sidebar-catalog__box">
+                                 <div class="options">
+                                    <div class="options__item">
+                                       <input id="all-manufacturers" class="options__input" checked type="radio" value="All manufacturers" name="manufacturers">
+                                       <label for="all-manufacturers" class="options__label"><span class="options__text">All manufacturers</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="caesarstone" class="options__input" type="radio" value="Caesarstone" name="manufacturers">
+                                       <label for="caesarstone" class="options__label"><span class="options__text">Caesarstone</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="quarella-quartz" class="options__input" type="radio" value="Quarella кварц" name="manufacturers">
+                                       <label for="quarella-quartz" class="options__label"><span class="options__text">Quarella кварц</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="quarella-marble" class="options__input" type="radio" value="Quarella мрамор" name="manufacturers">
+                                       <label for="quarella-marble" class="options__label"><span class="options__text">Quarella мрамор</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="neolith" class="options__input" type="radio" value="Neolith" name="manufacturers">
+                                       <label for="neolith" class="options__label"><span class="options__text">Neolith</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="atem" class="options__input" type="radio" value="Atem" name="manufacturers">
+                                       <label for="atem" class="options__label"><span class="options__text">Atem</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="avant" class="options__input" type="radio" value="Avant" name="manufacturers">
+                                       <label for="avant" class="options__label"><span class="options__text">Avant</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="vicostone" class="options__input" type="radio" value="Vicostone" name="manufacturers">
+                                       <label for="vicostone" class="options__label"><span class="options__text">Vicostone</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="silestone" class="options__input" type="radio" value="Silestone" name="manufacturers">
+                                       <label for="silestone" class="options__label"><span class="options__text">Silestone</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="belenco" class="options__input" type="radio" value="Belenco" name="manufacturers">
+                                       <label for="belenco" class="options__label"><span class="options__text">Belenco</span></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div data-spollers class="sidebar-catalog__item">
+                              <button type="button" data-spoller class="sidebar-catalog__title">Material</button>
+                              <div class="sidebar-catalog__box">
+                                 <div class="options">
+                                    <div class="options__item">
+                                       <input id="all-materials" class="options__input" checked type="radio" value="All materials" name="material">
+                                       <label for="all-materials" class="options__label"><span class="options__text">All materials</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="ceramics" class="options__input" type="radio" value="Ceramics" name="material">
+                                       <label for="ceramics" class="options__label"><span class="options__text">Ceramics</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="quartz" class="options__input" type="radio" value="Quartz" name="material">
+                                       <label for="quartz" class="options__label"><span class="options__text">Quartz</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="marble" class="options__input" type="radio" value="Marble" name="material">
+                                       <label for="marble" class="options__label"><span class="options__text">Marble</span></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div data-spollers class="sidebar-catalog__item">
+                              <button type="button" data-spoller class="sidebar-catalog__title">Thickness</button>
+                              <div class="sidebar-catalog__box">
+                                 <div class="options">
+                                    <div class="options__item">
+                                       <input id="all-thicknesses" class="options__input" checked type="radio" value="All thicknesses" name="thickness">
+                                       <label for="all-thicknesses" class="options__label"><span class="options__text">All thicknesses</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="six-millimeters" class="options__input" type="radio" value="6мм" name="thickness">
+                                       <label for="six-millimeters" class="options__label"><span class="options__text">6мм</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="twelve-millimeters" class="options__input" type="radio" value="12мм" name="thickness">
+                                       <label for="twelve-millimeters" class="options__label"><span class="options__text">12мм</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="twenty-millimeters" class="options__input" type="radio" value="20 мм" name="thickness">
+                                       <label for="twenty-millimeters" class="options__label"><span class="options__text">20 мм</span></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div data-spollers class="sidebar-catalog__item">
+                              <button type="button" data-spoller class="sidebar-catalog__title">Surface</button>
+                              <div class="sidebar-catalog__box">
+                                 <div class="options">
+                                    <div class="options__item">
+                                       <input id="all-surface" class="options__input" checked type="radio" value="All surfaces" name="surface">
+                                       <label for="all-surface" class="options__label"><span class="options__text">All surfaces</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="glossy" class="options__input" type="radio" value="Glossy" name="surface">
+                                       <label for="glossy" class="options__label"><span class="options__text">Glossy</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="matte" class="options__input" type="radio" value="Matte" name="surface">
+                                       <label for="matte" class="options__label"><span class="options__text">Matte</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="chenille" class="options__input" type="radio" value="Chenille" name="surface">
+                                       <label for="chenille" class="options__label"><span class="options__text">Chenille</span></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div data-spollers class="sidebar-catalog__item">
+                              <button type="button" data-spoller class="sidebar-catalog__title">Sizes</button>
+                              <div class="sidebar-catalog__box">
+                                 <div class="options">
+                                    <div class="options__item">
+                                       <input id="all-dimensions" class="options__input" checked type="radio" value="All sizes" name="dimensions">
+                                       <label for="all-dimensions" class="options__label"><span class="options__text">All sizes</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="o_1" class="options__input" type="radio" value="3200х1500" name="dimensions">
+                                       <label for="o_1" class="options__label"><span class="options__text">3200х1500</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="o_2" class="options__input" type="radio" value="3050х1440" name="dimensions">
+                                       <label for="o_2" class="options__label"><span class="options__text">3050х1440</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="o_3" class="options__input" type="radio" value="3070x1410" name="dimensions">
+                                       <label for="o_3" class="options__label"><span class="options__text">3070x1410</span></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="sidebar-catalog__footer">
+                           <button type="submit" class="sidebar-catalog__button button button_border">Submit</button>
+                           <button type="reset" class="sidebar-catalog__reset">Reset filter</button>
+                        </div>
+                     </form>
+                  </aside>
+                  <div class="catalog__body body-catalog">
+                     <h1 class="body-catalog__title">Catalog. Lorem ipsum dolor</h1>
+                     <button type="button" class="body-catalog__filter-button button button_arrow">filters</button>
+                     <div class="body-catalog__items">
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                        <div class="body-catalog__item item-product">
+                           <a href="product.html" class="item-product__image-ibg">
+                              <img data-src="@img/catalog/image1.jpg" alt="image">
+                              <div class="item-product__stock">Discount</div>
+                           </a>
+                           <a href="product.html" class="item-product__name">Lorem ipsum</a>
+                           <div class="item-product__info">
+                              <span class="item-product__manufacturer">Neolith</span>
+                              <span class="item-product__status">Free cutting</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="body-catalog__footer footer-gallery-pages">
+                        <ul class="footer-gallery-pages__list">
+                           <li class="footer-gallery-pages__item"><a href="#" class="footer-gallery-pages__arrow-prev disable _icon-small-arrow"></a></li>
+                           <li class="footer-gallery-pages__item"><a href="#" class="footer-gallery-pages__link footer-gallery-pages__link_active">1</a></li>
+                           <li class="footer-gallery-pages__item"><a href="#" class="footer-gallery-pages__link">2</a></li>
+                           <li class="footer-gallery-pages__item"><a href="#" class="footer-gallery-pages__link">3</a></li>
+                           <li class="footer-gallery-pages__item">...</li>
+                           <li class="footer-gallery-pages__item"><a href="#" class="footer-gallery-pages__link">25</a></li>
+                           <li class="footer-gallery-pages__item"><a href="#" class="footer-gallery-pages__arrow-next _icon-small-arrow"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

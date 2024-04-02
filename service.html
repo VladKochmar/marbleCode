@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Service"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="service">
+            <div class="service__container">
+               <div class="service__header page-top">
+                  <nav class="page-top__pages pages-navigation">
+                     <ul class="pages-navigation__list">
+                        <li class="pages-navigation__item"><a href="index.html" class="pages-navigation__link">Home</a></li>
+                        <li class="pages-navigation__item"><a href="#" class="pages-navigation__link pages-navigation__link_active">Service</a></li>
+                     </ul>
+                  </nav>
+                  <h1 class="page-top__title">Service</h1>
+               </div>
+               <div class="service__text">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere aut molestiae iusto accusamus, itaque quisquam.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quisquam maiores ducimus assumenda possimus minus dolorum, molestias distinctio at quam.</p>
+               </div>
+               <div class="service__items">
+                  <div class="service__item item-service">
+                     <a href="service-article.html" class="item-service__image-ibg"><img data-src="@img/service/image.jpg" alt="image"></a>
+                     <a href="service-article.html" class="item-service__title">Lorem ipsum dolor sit amet</a>
+                  </div>
+                  <div class="service__item item-service">
+                     <a href="service-article.html" class="item-service__image-ibg"><img data-src="@img/service/image2.jpg" alt="image"></a>
+                     <a href="service-article.html" class="item-service__title">Lorem ipsum dolor sit, amet adipisicing</a>
+                  </div>
+                  <div class="service__item item-service">
+                     <a href="service-article.html" class="item-service__image-ibg"><img data-src="@img/service/image3.jpg" alt="image"><img src="@img/service/quality.png" alt="quality" class="item-service__icon"></a>
+                     <a href="service-article.html" class="item-service__title">Lorem ipsum dolor sit</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="questions">
+            <div class="questions__container questions__container_big">
+               <div class="questions__body">
+                  <div class="questions__content">
+                     <h2 class="questions__title">Do you have any questions?</h2>
+                     <p class="questions__text">Write to us and we will call you back</p>
+                  </div>
+                  <form action="#" method="#" class="questions__form">
+                     <div><input data-required autocomplete="off" type="text" name="user_phone" data-error="Enter your phone number" placeholder="Your phone number" class="questions__input input"></div>
+                     <button type="submit" class="questions__button button button_arrow">Order</button>
+                  </form>
+                  <img data-src="@img/service/image-bg.jpg" alt="image" class="questions__image-bg">
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

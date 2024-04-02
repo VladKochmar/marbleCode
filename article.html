@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Lorem, ipsum dolor sit amet consectetur adipisicing"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="main-page">
+            <div class="main-page__content">
+               <div class="main-page__container">
+                  <div class="main-page__header page-top">
+                     <nav class="page-top__pages pages-navigation">
+                        <ul class="pages-navigation__list">
+                           <li class="pages-navigation__item pages-navigation__item_white"><a href="index.html" class="pages-navigation__link">Home</a></li>
+                           <li class="pages-navigation__item pages-navigation__item_white"><a href="blogs.html" class="pages-navigation__link">Blog</a></li>
+                           <li class="pages-navigation__item pages-navigation__item_white"><a href="#" class="pages-navigation__link pages-navigation__link_active">Lorem, ipsum dolor sit amet consectetur adipisicing</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <div class="main-page__body">
+                     <h1 class="main-page__title">Lorem ipsum dolor sit amet consectetur</h1>
+                     <div class="main-page__text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quod laborum autem voluptas?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic asperiores ab perspiciatis cum, consequuntur tenetur? Harum, asperiores hic!</p>
+                     </div>
+                  </div>
+               </div>
+               <img src="@img/article/main-page/bg-image.jpg" alt="bg-image" class="main-page__bg-image">
+            </div>
+         </section>
+         <div class="content-article">
+            <div class="content-article__container">
+               <div class="content-article__info">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores qui magnam, exercitationem quibusdam totam voluptas at nesciunt neque natus suscipit architecto praesentium, nisi, molestiae modi facere corporis quod. Nisi, blanditiis!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut, cupiditate, deserunt incidunt veritatis explicabo dolorum qui delectus placeat repellat similique tenetur itaque! Ex corporis fuga enim iure suscipit id optio magnam inventore autem beatae?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, molestiae vero consectetur ipsam dolorem aliquid nisi similique dolores! Doloremque amet excepturi aspernatur blanditiis quia molestias dolorum corporis sint veniam accusantium, error magni. Totam cum aliquid exercitationem maiores dolorem recusandae est, ut doloribus.</p>
+               </div>
+               <img data-src="@img/article/content-article/image.jpg" alt="image" class="content-article__image">
+               <div class="content-article__block">
+                  <h2 class="content-article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus eveniet harum sed commodi accusantium voluptatem:</p>
+                  <ul class="content-article__list list-info">
+                     <li class="list-info__item">Lorem ipsum dolor sit amet consectetur adipisicing;</li>
+                     <li class="list-info__item">Lorem ipsum dolor sit;</li>
+                     <li class="list-info__item">Lorem ipsum dolor sit amet consectetur adipisicing;</li>
+                     <li class="list-info__item">Lorem ipsum dolor sit amet consectetur.</li>
+                  </ul>
+                  <div class="content-article__info">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi impedit vel?</p>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum in optio at, voluptatem aut consequuntur numquam id iusto beatae. Corrupti ipsum officia dolorem recusandae neque sed unde?</p>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam mollitia fugiat nulla blanditiis!</p>
+                  </div>
+               </div>
+               <div class="content-article__swiper swiper-article">
+                  <h2 class="swiper-article__title">PHOTO REPORT</h2>
+                  <div class="swiper-article__body">
+                     <div class="swiper-article__slider swiper">
+                        <div class="swiper-article__wrapper swiper-wrapper">
+                           <div class="swiper-article__slide swiper-slide">
+                              <div class="swiper-article__image-ibg"><img data-src="@img/article/content-article/image.jpg" alt="image" class="swiper-lazy"></div>
+                           </div>
+                           <div class="swiper-article__slide swiper-slide">
+                              <div class="swiper-article__image-ibg"><img data-src="@img/gallery/image6.jpg" alt="image" class="swiper-lazy"></div>
+                           </div>
+                           <div class="swiper-article__slide swiper-slide">
+                              <div class="swiper-article__image-ibg"><img data-src="@img/gallery/image7.jpg" alt="image" class="swiper-lazy"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <button type="button" class="swiper-article-prev"><span class="swiper-article-prev__arrow"></span></button>
+                     <button type="button" class="swiper-article-next"><span class="swiper-article-next__arrow"></span></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

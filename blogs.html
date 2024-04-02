@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Blog"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="blogs">
+            <div class="blogs__container">
+               <div class="blogs__header page-top">
+                  <nav class="page-top__pages pages-navigation">
+                     <ul class="pages-navigation__list">
+                        <li class="pages-navigation__item"><a href="index.html" class="pages-navigation__link">Home</a></li>
+                        <li class="pages-navigation__item"><a href="#" class="pages-navigation__link pages-navigation__link_active">Blog</a></li>
+                     </ul>
+                  </nav>
+                  <h1 class="page-top__title">Interior Design Blog</h1>
+               </div>
+               <div class="blogs__items">
+                  <div class="blogs__item item-blogs">
+                     <a href="article.html" class="item-blogs__image-ibg"><img data-src="@img/blogs/image1.jpg" alt="image"></a>
+                     <div class="item-blogs__content">
+                        <a href="article.html" class="item-blogs__title">Lorem ipsum dolor sit amet consectetur</a>
+                        <p class="item-blogs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nisi saepe nesciunt dicta nam esse doloremque minima voluptate enim magni laudantium similique, consectetur dolorum, explicabo corporis quod...</p>
+                     </div>
+                  </div>
+                  <div class="blogs__item item-blogs">
+                     <a href="article.html" class="item-blogs__image-ibg"><img data-src="@img/blogs/image2.jpg" alt="image"></a>
+                     <div class="item-blogs__content">
+                        <a href="article.html" class="item-blogs__title">Lorem ipsum dolor sit amet consectetur adipisicing</a>
+                        <p class="item-blogs__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem fugiat unde quam, harum labore inventore perspiciatis? Fuga, ex soluta. Voluptatem ratione ipsa eius quidem eos sunt dolore quasi, aut nam...</p>
+                     </div>
+                  </div>
+                  <div class="blogs__item item-blogs">
+                     <a href="article.html" class="item-blogs__image-ibg"><img data-src="@img/blogs/image3.jpg" alt="image"></a>
+                     <div class="item-blogs__content">
+                        <a href="article.html" class="item-blogs__title">Lorem ipsum dolor sit amet</a>
+                        <p class="item-blogs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, vel fugit possimus vitae ratione totam nisi quos tenetur, facere quae voluptates impedit deserunt modi itaque...</p>
+                     </div>
+                  </div>
+                  <div class="blogs__item item-blogs">
+                     <a href="article.html" class="item-blogs__image-ibg"><img data-src="@img/blogs/image4.jpg" alt="image"></a>
+                     <div class="item-blogs__content">
+                        <a href="article.html" class="item-blogs__title">Lorem, ipsum dolor</a>
+                        <p class="item-blogs__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque amet natus accusamus quibusdam eum harum. Possimus debitis quidem iusto ab quos consequuntur quisquam voluptate saepe nobis. A, optio atque autem inventore reiciendis quidem quia accusamus...</p>
+                     </div>
+                  </div>
+                  <div class="blogs__item item-blogs">
+                     <a href="article.html" class="item-blogs__image-ibg"><img data-src="@img/blogs/image5.jpg" alt="image"></a>
+                     <div class="item-blogs__content">
+                        <a href="article.html" class="item-blogs__title">Lorem ipsum dolor sit amet consectetur adipisicing</a>
+                        <p class="item-blogs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatem dolorum architecto numquam eaque expedita eius, quaerat laudantium fugit perferendis eum quia dolor cumque consequuntur maiores error amet. Saepe, voluptatem excepturi. Cupiditate, obcaecati...</p>
+                     </div>
+                  </div>
+                  <div class="blogs__item item-blogs">
+                     <a href="article.html" class="item-blogs__image-ibg"><img data-src="@img/blogs/image6.jpg" alt="image"></a>
+                     <div class="item-blogs__content">
+                        <a href="article.html" class="item-blogs__title">Lorem ipsum dolor sit amet</a>
+                        <p class="item-blogs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni saepe atque! Qui ipsam error, voluptatem aperiam fugit impedit quos neque, hic, atque perferendis facere eum iste dolorem...</p>
+                     </div>
+                  </div>
+                  <div class="blogs__item item-blogs">
+                     <a href="article.html" class="item-blogs__image-ibg"><img data-src="@img/blogs/image7.jpg" alt="image"></a>
+                     <div class="item-blogs__content">
+                        <a href="article.html" class="item-blogs__title">Lorem ipsum dolor sit amet consectetur adipisicing</a>
+                        <p class="item-blogs__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum debitis voluptatum, mollitia officiis possimus rem voluptate totam repudiandae? Odit quasi sequi cupiditate aliquam excepturi repellat animi. Nulla et voluptatem ab...</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="blogs__footer footer-gallery-pages">
+                  <ul class="footer-gallery-pages__list">
+                     <li class="footer-gallery-pages__item"><a href="#" class="footer-gallery-pages__arrow-prev disable _icon-small-arrow"></a></li>
+                     <li class="footer-gallery-pages__item"><a href="#" class="footer-gallery-pages__link footer-gallery-pages__link_active">1</a></li>
+                     <li class="footer-gallery-pages__item"><a href="#" class="footer-gallery-pages__link">2</a></li>
+                     <li class="footer-gallery-pages__item"><a href="#" class="footer-gallery-pages__link">3</a></li>
+                     <li class="footer-gallery-pages__item">...</li>
+                     <li class="footer-gallery-pages__item"><a href="#" class="footer-gallery-pages__link">25</a></li>
+                     <li class="footer-gallery-pages__item"><a href="#" class="footer-gallery-pages__arrow-next _icon-small-arrow"></a></li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+
+   @@include('html/_js.htm',{})
+</body>
+
+</html>
