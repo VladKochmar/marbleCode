@@ -1,0 +1,306 @@
+//====================================================================================================
+.header {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	background-color: $blackColor;
+	&._header-scroll {
+		position: fixed;
+		top: -200%;
+		background-color: rgba(40, 40, 40, 0.5);
+		.header__container {
+			max-height: rem(80);
+			@media (max-width:$mobile){
+				max-height: rem(60);
+			}
+		}
+	}
+	&._header-show {
+		transition: top 0.3s ease 0s;
+		top: 0;
+	}
+	// .header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: rem(15);
+		padding-top: rem(7);
+		padding-bottom: rem(13);
+		height: rem(60);
+		@media (max-width:$mobile){
+			height: rem(40);
+			display: grid;
+			grid-template-columns: 1fr rem(30);
+		}
+	}
+	// .header__logo
+	&__logo {
+		position: relative;
+		z-index: 15;
+		img {
+			@include adaptiveValue("max-width", 223, 119, 0, 1160, 768);
+		}
+		@media (max-width:$tablet){
+			order: 1;
+		}
+		@media (max-width:$mobile){
+			justify-self: center;
+			img {
+				max-width: rem(158);
+			}
+		}
+	}
+	// .header__menu
+	&__menu {
+		@media (max-width:$tablet){
+			order: 3;
+		}
+	}
+	// .header__contacts
+	&__contacts {
+		@media (max-width:$tablet){
+			order: 2;
+		}
+	}
+}
+.menu {
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+		@media (max-width:$tablet) {
+			position: fixed;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			background: url('@img/header/bg-mobile.png') center / cover no-repeat, #000;
+			transition: left 0.3s ease 0s;
+			overflow: auto;
+			z-index: 10;
+			padding-top: rem(100);
+			.menu-open & {
+				left: 0;
+			}
+		}
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@include adaptiveValue("column-gap", 40, 25, 0, 1160, 1024);
+		row-gap: rem(25);
+		@media (max-width:$tablet){
+			flex-direction: column;
+			justify-content:center;
+			border-bottom: rem(1) solid #C4C4C4;
+			padding-bottom: rem(25);
+		}
+	}
+	// .menu__item
+	&__item {
+		position: relative;
+		@media (any-hover: hover){
+			&:hover{
+				.menu__sublist {
+					transform: scaleY(1);
+					transition: transform 0.3s ease 0s;
+				}
+			}
+		}
+		@media (max-width:$tablet){
+			display: flex;
+			justify-content: center;
+			&:nth-last-child(4) {
+				border-bottom: rem(1) solid #C4C4C4;
+				padding-bottom: rem(25);
+			}
+		}
+	}
+	// .menu__link
+	&__link {
+		font-family: 'Oswald';
+		color: $whiteColor;
+		line-height: 1.5;
+		transition: color 0.3s ease 0s;
+		position: relative;
+		@media (max-width: $tablet) {
+			font-weight: 300;
+			font-size: rem(24);
+		}
+		// .menu__link_arrow
+		&_arrow {
+			@media (max-width:$tablet){
+				&::after{
+					display: none;
+				}
+			}
+			&::after {
+				content:'\e904';
+				@extend %ic;
+				color: $orangeColor;
+				font-size: rem(5);
+				position: absolute;
+				top: 50%;
+				right: rem(-16);
+			}
+		}
+		@media (any-hover: hover){
+			&:hover{
+				color: $orangeColor;
+			}
+		}
+	}
+	// .menu__sublist
+	&__sublist {
+		position: absolute;
+		top: rem(20);
+		left: 0;
+		padding-top: rem(10);
+		transform-origin:top center;
+		transform: scaleY(0);
+	}
+}
+.icon-menu {
+}
+.sublist-menu {
+	@media (max-width:$tablet){
+		display: none;
+	}
+	width: rem(192);
+	padding: rem(16) rem(36) rem(16) rem(14);
+	background-color: rgba(17, 17, 17, 0.99);
+	display: grid;
+	row-gap: rem(6);
+	// .sublist-menu__item
+	&__item {
+	}
+	// .sublist-menu__link
+	&__link {
+		display: block;
+		width: 100%;
+		font-family: 'Oswald';
+		color: $whiteColor;
+		line-height: 1.5;
+		transition: color 0.3s ease 0s;
+		display: flex;
+		@media (any-hover: hover){
+			&:hover{
+				color: $orangeColor;
+			}
+		}
+	}
+}
+.contacts-header {
+	display: flex;
+	@media (max-width:$tablet){
+		column-gap: rem(25);
+	}
+	@media (min-width:$mobile){
+		align-items: center; 
+	}
+	@media (min-width:$tablet){
+		justify-content: space-between;
+		@include adaptiveValue("column-gap", 58, 15, 0, 1160, 992);
+	}
+	@media (max-width:$mobile){
+		flex-direction: column;
+	}
+	.contacts-header__selects {
+		display: flex;
+		column-gap: rem(20);
+		@media (max-width:$mobile){
+			order: 2;
+			justify-content: center;
+			padding-top: rem(25);
+		}
+	}
+	.contacts-header__items {
+		@media (max-width:$mobile){
+			order: 1; 
+		}
+	}
+	// .contacts-header__phone
+	&__phone {
+		display: flex;
+		@media (min-width:$tablet){
+			flex-direction: column;
+		}
+		@media (max-width:$tablet) and (min-width:$mobile){
+			column-gap: rem(25);
+		}
+		@media (max-width:$mobile){
+			row-gap: rem(25);
+			align-items: center;
+			border-bottom: 1px solid #C4C4C4;
+			padding: rem(25) 0;
+			flex-direction: column;
+		}
+	}
+	// .contacts-header__number
+	&__number {
+		font-family: 'Oswald';
+		color: $whiteColor;
+		font-size: rem(13);
+		line-height: 1.84;
+		@media (max-width: $mobile){
+			font-weight: 300;
+			font-size: rem(24);
+		}
+	}
+}
+
+
+//====================================================================================================
+
+//Burger
+.icon-menu {
+	display: none;
+	@media (max-width: $tablet) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 15;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: $whiteColor;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}

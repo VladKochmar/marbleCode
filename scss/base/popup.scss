@@ -1,0 +1,96 @@
+body::after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease 0s;
+	pointer-events: none;
+	z-index: 149;
+}
+.popup-show body::after {
+	opacity: 1;
+}
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 30px 10px;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	pointer-events: none;
+}
+.popup_show {
+	z-index: 150;
+	visibility: visible;
+	overflow: auto;
+	pointer-events: auto;
+}
+.popup_show .popup__content {
+	visibility: visible;
+	transform: scale(1);
+}
+.popup__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup__content {
+	visibility: hidden;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur(5px);
+	background-color: $whiteColor;
+	padding: rem(35) rem(40) rem(45) rem(40);
+	width: 100%;
+	max-width: 900px;
+	position: relative;
+	.lock & {
+		visibility: visible;
+	}
+}
+.popup__btn-cont {
+	position: absolute;
+	top: rem(-45);
+	right: rem(-45);
+	width: rem(30);
+	height: rem(30);
+	@media (max-width:$tablet){
+		top: rem(10);
+		right: rem(10);
+	}
+}
+.popup__close {
+	position: relative;
+	&::before,&::after{
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: rem(30);
+		height: rem(2);
+		background-color: $whiteColor;
+		@media (max-width:$tablet){
+			background-color: $mainColor;
+		}
+	}
+	&::before{
+		transform: rotate(45deg);
+	}
+	&::after{
+		transform: rotate(-45deg);
+	}
+}

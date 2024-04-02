@@ -1,0 +1,94 @@
+.main-block {
+   position: relative;
+   @include adaptiveValue("padding-bottom", 120, 85, 0, 1160, 768);
+   @media (max-width:$mobile){
+      padding-bottom: rem(40);
+   }
+   // .main-block__container
+   &__container {
+   }
+   // .main-block__header
+   &__header {
+      border-bottom: none;
+      padding-bottom: rem(0);
+      &:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 80, 50, 0, 1160, 768);
+         @media (max-width:$mobile){
+            margin-bottom: rem(30);
+         }
+      }
+   }
+   // .main-block__title
+   &__title {
+      color: $whiteColor;
+      font-family: 'Oswald';
+      font-weight: 300;
+      @include adaptiveValue("font-size", 42, 24, 0, 1160, 768);
+      line-height: 1.47;
+      text-transform: uppercase;
+   }
+   // .main-block__image-bg
+   &__image-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+   }
+}
+//========================================================================================================================================================
+.advantages {
+   @include adaptiveValue("padding-top", 130, 85, 0, 1160, 768);
+   @include adaptiveValue("padding-bottom", 145, 85, 0, 1160, 768);
+   @media (max-width:$mobile){
+      @include adaptiveValue("padding-top", 85, 50, 0, 768, 375);
+      padding-bottom: rem(45);
+   }
+   position: relative;
+   overflow: hidden;
+   // .advantages__container
+   &__container {
+   }
+   // .advantages__title
+   &__title {
+      font-family: 'Oswald';
+      font-weight: 300;
+      @include adaptiveValue("font-size", 42, 24, 0, 1160, 768);
+      line-height: 1.47;
+      text-align: center;
+      text-transform: uppercase;
+      &:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 80, 60, 0, 1160, 768);
+         @media (max-width:$mobile){
+            @include adaptiveValue("margin-bottom", 60, 30, 0, 768, 375);
+         }
+      }
+   }
+   // .advantages__items
+   &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @include adaptiveValue("row-gap", 80, 45, 0, 1160, 768);
+      @media (max-width:$mobile){
+         row-gap: rem(30);
+         justify-content: center;
+      }
+   }
+   // .advantages__item
+   &__item {
+      flex: 0 1 rem(300);
+      display: flex;
+      @include adaptiveValue("column-gap", 40, 30, 0, 768, 375);
+      align-items: center;
+   }
+   // .advantages__icon
+   &__icon {
+   }
+   // .advantages__text
+   &__text {
+   }
+}
